@@ -1,29 +1,29 @@
 import { getFullYear, getFooterCopy, getLatestNotification } from "./utils";
 
-describe("Get full year", function() {
-  it("should return the correct year", function() {
-    const currentYear = new Date().getFullYear();
-    expect(getFullYear()).toBe(currentYear);
+describe("utils_tests", function () {
+  describe("getFullYear", function () {
+    it("should return current year", function () {
+      const year = getFullYear();
+      expect(year).toEqual(new Date().getFullYear());
+    });
   });
-})
+  describe("getFooterCopy", function () {
+    const trueMsg = "Holberton School";
+    const falseMsg = "Holberton School main dashboard";
 
-describe("Get footer message", function() {
-  const trueMessage = 'Holberton School';
-  const falseMessage = 'Holberton School main dashboard';
-
-  it("should return the true footer message", function() {
-    const currentMessage = getFooterCopy(true);
-    expect(currentMessage).toBe(trueMessage);
+    it("Should return true message", function () {
+      const msg = getFooterCopy(true);
+      expect(msg).toEqual(trueMsg);
+    });
+    it("Should return false message", function () {
+      const msg = getFooterCopy(false);
+      expect(msg).toEqual(falseMsg);
+    });
   });
-  it("should return the false footer message", function() {
-    const currentMessage = getFooterCopy(false);
-    expect(currentMessage).toBe(falseMessage);
-  })
-})
-
-describe("Get latest notification", function() {
-  it("should return the urgent message text", function() {
-    const message = '<strong>Urgent requirement</strong> - complete by EOD';
-    expect(message).toBe(getLatestNotification());
+  describe("getLatestNotification", function () {
+    it("shold return correct string element", function () {
+      const element = "<strong>Urgent requirement</strong> - complete by EOD";
+      expect(getLatestNotification()).toEqual(element);
+    });
   });
-})
+});
