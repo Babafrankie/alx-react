@@ -1,15 +1,20 @@
 :root {
-  --main-color: #e01d3f;
+    --holberton-red: #e1484c;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  color: var(--main-color);
-  font-size: 20px;
-  border-bottom: 3px solid var(--main-color);
+.App-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    border-bottom: 3px solid var(--holberton-red);
+    margin-top: 30px;
 }
 
-.header img {
-  width: 200px;
+.App-header img {
+    width: 150px;
+}
+
+.App-header h1 {
+    margin: auto auto auto 0;
+    color: var(--holberton-red);
 }

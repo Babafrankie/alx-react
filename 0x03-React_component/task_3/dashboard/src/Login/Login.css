@@ -1,11 +1,11 @@
 :root {
-  --main-color: #e01d3f;
+    --holberton-red: #e1484c;
 }
 
-.login {
-  margin: 50px;
+.App-body {
+    padding: 36px 24px;
 }
-.login input {
-  margin-left: 20px;
-  margin-right: 20px;
+
+.App-body input {
+    margin: 0 16px 0 8px;
 }
