@@ -1,11 +1,25 @@
-:root {
-    --holberton-red: #e1484c;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-body {
-    padding: 36px 24px;
+.Login {
+  padding: 50px;
+  margin-left: -15px;
 }
 
-.App-body input {
-    margin: 0 16px 0 8px;
+.Login p {
+  top: 3rem;
+  left: 2.5rem;
+}
+
+.Login div {
+  margin-left: -5px;
+  margin-top: 15px;
+}
+
+.Login label,
+input {
+  margin: 5px;
 }

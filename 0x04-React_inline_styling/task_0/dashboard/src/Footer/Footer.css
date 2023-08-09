@@ -1,15 +1,13 @@
-:root {
-    --holberton-red: #e1484c;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.App-footer p {
-    text-align: center;
-    border-top: 3px solid var(--holberton-red);
-    padding: 16px 0;
+.Footer {
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 4px solid #e1354b;
 }

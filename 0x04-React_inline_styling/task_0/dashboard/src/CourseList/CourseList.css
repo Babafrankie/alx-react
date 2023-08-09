@@ -1,22 +1,16 @@
-th {
-    border-bottom: 1px solid gray;
-    margin: 0;
-    padding: 0;
-    text-align: left;
+#CourseList {
+  width: 90%;
+  margin: 50px auto;
+  border: 1px solid lightgray;
+  border-collapse: collapse;
 }
 
-th:first-child {
-    text-align: center;
+#CourseList th {
+  border-bottom: 1px solid lightgray;
+  height: 25px;
+  text-align: left;
 }
 
-table {
-    width: 90%;
-    border: 1px solid gray;
-    margin: auto;
-    margin-top: 40px;
-    padding: 0;
-}
-
-td {
-    padding-left: 3px;
+#CourseList th[colspan='2'] {
+  text-align: center;
 }

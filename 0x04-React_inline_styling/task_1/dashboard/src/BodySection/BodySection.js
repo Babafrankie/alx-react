@@ -1,27 +1,30 @@
-import React, { Component } from 'react'
+import React from 'react';
 import PropTypes from 'prop-types';
 
-class BodySection extends Component {
-  render() {
-    return (
-      <div className='bodySection'>
-        <h2>{this.props.title}</h2>
-        {this.props.children}
-      </div>
-    );
-  }
+class BodySection extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+
+	render() {
+		const { title, children } = this.props;
+		return (
+			<React.Fragment>
+				<div className="bodySection">
+					<h2>{title}</h2>
+					{children}
+				</div>
+			</React.Fragment>
+		);
+	}
 }
 
-BodySection. defaultProps = {
-	children: <React.Fragment />
+BodySection.propTypes = {
+	title: PropTypes.string
 };
 
-BodySection.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element
-  ])
+BodySection.defaultProps = {
+	title: ""
 };
 
 export default BodySection;
